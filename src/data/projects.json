@@ -1,0 +1,27 @@
+[{
+    "id" : 1,
+    "title": "Kasa",
+    "description" : "Un site pour...",
+    "image":"/assets/images/logo-kasa.png",
+    "logo":"/assets/images/logo-kasa.png",
+    "tags": [ "REACT", "HTML", "CSS", "SASS"]
+},
+{
+    "id" : 2,
+    "title": "Booki",
+    "description" : "Un site pour...",
+    "year": "2023",
+    "image":"/assets/images/projects/booki/booki-présentation.png",
+    "logo": "",
+    "tags": ["HTML", "CSS"]
+},
+{
+    "id" : 3,
+    "title": "Site Web de Sophie Bluel",
+    "description" : "Un site pour...",
+    "image":".../assets/logo-kasa.png",
+    "logo": "",
+    "tags": ["HTML", "CSS", "JavaScript"]
+}
+
+]

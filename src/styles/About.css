@@ -1,0 +1,38 @@
+#about {
+    position: relative;
+    min-height: 400px;
+}
+
+#about h2 {
+    position: relative;
+}
+
+#about p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#about::before, #about::after {
+    content: '';
+    position: absolute;
+}
+
+
+#about::before {
+    top: 140px;
+    right: 100px;
+    width: 200px;
+    height: 200px;
+    border-top : solid 2px white;
+    border-right: solid 2px white;
+
+}
+
+#about::after {
+    bottom: 80px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    border-bottom : solid 2px white;
+    border-left: solid 2px white;
+}

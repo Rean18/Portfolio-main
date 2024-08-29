@@ -1,0 +1,32 @@
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+  .canvasjs-chart-container {
+    width: 800px; /* Largeur souhaitée pour le graphique */
+    height: 400px; /* Hauteur souhaitée pour le graphique */
+    position: relative; /* Assure que tous les éléments sont positionnés par rapport à ce conteneur */
+    margin: 0 auto; /* Centrer horizontalement */
+  }
+
+  .canvasjs-chart-credit {
+    visibility: hidden;
+  }
+
+  .toggle-container {
+    width: 200px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  #skills img {
+    height: 34px;
+
+  }

@@ -2,10 +2,11 @@ import '../../styles/Home.css'
 import '../../styles/About.css'
 import Skills from '../../components/Skills'
 import Project from '../../components/ProjectGallery'
+import Form from '../../components/Form'
 
 
 
-function Presentation() {
+function Home() {
    
 
     return(
@@ -28,9 +29,10 @@ function Presentation() {
         </section>
             <Skills />
             <Project />
+            <Form />
         </main>
         
     )
 }
 
-export default Presentation
+export default Home

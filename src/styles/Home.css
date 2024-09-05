@@ -1,7 +1,9 @@
 #section-presentation {
-    padding: 100px 200px;
+    margin: auto;    
+    height: 400px;
+    width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .presentation-title {
@@ -11,7 +13,7 @@
     justify-content: center;
 }
 
-h1 {
+.presentation-title h1 {
     font: 48px bold;
     color: #2E9191;
     text-shadow: rgba(0, 0, 0, 0.4) 1px 4px 4px;
@@ -23,6 +25,11 @@ h1 {
     margin-left: 22%;
     text-shadow: rgba(0, 0, 0, 0.4) 1px 3px 3px;
 
+}
+
+.presentation-img {
+    display: flex;
+    align-items: center;
 }
 
 .presentation-img img {
@@ -38,6 +45,7 @@ h1 {
     padding: 50px 100px;
     background-color: #2E9191;
     text-align: center;
+    scroll-margin-top: 80px; 
 }
 .blue-section h2 {
     font : 36px bold;
@@ -55,6 +63,8 @@ h1 {
     min-height: 500px;
     padding: 50px 100px;
     text-align: center;
+    scroll-margin-top: 62px; 
+
 }
 .white-section h2 {
     font : 36px bold;
@@ -63,3 +73,58 @@ h1 {
     
 }
 
+
+@media screen and (max-width: 1200px) {
+
+    #section-presentation {
+        max-height: 300px;
+    }
+
+    .presentation-title {
+        width: 90%;
+    }
+    .presentation-title h1 {
+        font-size: 36px;
+    }
+    
+    .presentation-title h2 {
+        font: 20px bold;
+        text-shadow: rgba(0, 0, 0, 0.2) 1px 3px 3px;
+    }
+    
+    .presentation-img img {
+        width: 180px;
+    }
+
+    .blue-section {
+        max-height: 300px;
+        padding: 40px 40px;
+        background-color: #2E9191;
+        text-align: center;
+        scroll-margin-top: 80px; 
+    }
+    .blue-section h2 {
+        font : 26px bold;
+        margin-bottom: 30px;
+        
+    }
+    .blue-section p {
+        padding: 30px 60px;
+       line-height: 2;
+    }
+    
+    .white-section {
+        min-height: 500px;
+        padding: 30px 80px;
+        text-align: center;
+        scroll-margin-top: 62px; 
+    
+    }
+    .white-section h2 {
+        font : 26px bold;
+        color: #2E9191;
+        margin-bottom: 50px;
+        
+    }
+    
+}

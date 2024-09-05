@@ -1,20 +1,24 @@
-import { Link } from 'react-router-dom'
+import { NavHashLink, HashLink } from 'react-router-hash-link';
+
 import '../../styles/Header.css'
 
 function Header() {
     return (
         <header>
-            <div className='img-container'>
-                <img src='/assets/images/illustration-rémi.webp' alt="" />
+            <div className='header-container'>
+                <div className='img-container'>
+                    <HashLink smooth to='/#section-presentation'><img src='/assets/images/illustration-rémi.webp' alt="" /></HashLink>
+                    
+                </div>
+                <nav className=''>
+                    <ul>
+                        <li> <NavHashLink smooth to='/#about'>A propos</NavHashLink> </li>
+                        <li> <NavHashLink smooth to='/#skills'>Compétences</NavHashLink> </li>
+                        <li> <NavHashLink smooth to='/#project'>Projets</NavHashLink> </li>
+                        <li> <NavHashLink smooth to='/#contact'>Contact</NavHashLink> </li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li> <Link to='/#about'>A propos</Link> </li>
-                    <li> <Link>Compétences</Link> </li>
-                    <li> <Link>Projets</Link> </li>
-                    <li> <Link>Contact</Link> </li>
-                </ul>
-            </nav>
         </header>
     )
 }

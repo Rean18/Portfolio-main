@@ -1,9 +1,11 @@
 #project {
-    padding: 40px;
+    padding: 40px 40px 60px 40px;
   
 }
 
 #project .container {
+    margin: auto;
+    max-width: 1200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,14 +23,26 @@
     cursor: pointer;
 }
 
-#btn-thumbnail {
+.thumbnail-container {
     width: 600px;
     height: 400px;
+}
+
+#btn-thumbnail {
+    padding: 0;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    background-color: white;
+    border-color: #095252;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 4px 4px;
+    border-style: solid;
+
+
 }
 
 #btn-thumbnail img {
@@ -36,23 +50,26 @@
 }
 
 .thumbnail-title {
+    margin-top: 30px;
     width: 100%;
+    background-color: #095252;
+    border-radius: 0 0 17px 17px;
+    border : solid 2px;
+    border-color:#095252;
 }
 
 #btn-thumbnail h3 {
     padding: 20px;
     font-size: 20px;
     text-align: left;
+    color: white;
 }
-
-
 
 #project-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 50px;
-
 }
 
 #project-container button {
@@ -69,11 +86,9 @@
 
 #project-container button:hover {
     cursor: pointer;
-
 }
 
 #project-container h2, h3, h4{
-
    color: #095252;
 }
 #project-container h2 {
@@ -100,3 +115,20 @@
     background-color:#E3F9F9;
 }
 
+@media screen and (max-width:1200px) {
+
+  
+    #btn-thumbnail img {
+        width: 400px;
+    }
+
+    #project .change-project  {
+        width: 100px;
+        height: 200px;
+    }
+
+    .thumbnail-container {
+        width: 500px;
+        height: 300px;
+    }
+}

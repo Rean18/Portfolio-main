@@ -7,8 +7,9 @@ function Chart({ data }) {
 
     const options = {
         
-        width: 800,
         dataPointWidth: 50,
+        animationEnabled: true,
+        animationDuration: 1000,
         axisX:{
             labelFontColor: '#095252',
             labelFontFamily: 'Lusitana',
@@ -20,7 +21,7 @@ function Chart({ data }) {
             maximum:100,
             interval:20,
             labelFormatter: function() {
-                return "";  // Retourne une chaîne vide pour masquer les labels de l'axe Y
+                return "";  
               },
             lineThickness: 0,
         },

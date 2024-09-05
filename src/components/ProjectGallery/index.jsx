@@ -42,7 +42,7 @@ useEffect(() => {
 
     const customStyles = {
         content : {
-            width: '60%',
+            width: '70%',
             height: '90%',
             margin: 'auto',
 

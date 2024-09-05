@@ -22,18 +22,21 @@ function Skills() {
       ];
 
       const dataDevSkills = [
-        { label: "HTML & CSS",  y: 80, color:'#095252' },
-        { label: "GitHub", y: 90, color:'#095252'  },
-        { label: "React & JS", y: 70, color:'#095252'  },
-        { label: "Figma",  y: 70, color:'#095252'  },
-        { label: "express",  y: 90, color:'#095252'  }
+        { label: "HTML & CSS",  y: 70, color:'#095252' },
+        { label: "GitHub", y: 60, color:'#095252'  },
+        { label: "React & JS", y: 60, color:'#095252'  },
+        { label: "Figma",  y: 50, color:'#095252'  },
+        { label: "express",  y: 30, color:'#095252'  }
       ];
 
 
     return(
         <section id="skills" className='white-section'>
         <h2>Compétences</h2>
-            <Chart data = { isTeacherSkills ? dataTeacherSkills : dataDevSkills } />
+        <Chart 
+                key={isTeacherSkills ? "teacher" : "dev"} 
+                data={isTeacherSkills ? dataTeacherSkills : dataDevSkills} 
+        />
             <div className="toggle-container">
                 <img src="/assets/images/laptop.png" alt="ordinateur portable" />
                 <ToggleSwitch  isTeacherSkills={ isTeacherSkills } onToggleChange={ handleToggleChange }/>

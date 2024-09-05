@@ -4,7 +4,8 @@
     "description" : "Un site pour...",
     "image":"/assets/images/logo-kasa.png",
     "logo":"/assets/images/logo-kasa.png",
-    "tags": [ "REACT", "HTML", "CSS", "SASS"]
+    "tags": [ "REACT", "HTML", "CSS", "SASS"],
+    "url" : ""
 },
 {
     "id" : 2,
@@ -13,7 +14,8 @@
     "year": "2023",
     "image":"/assets/images/projects/booki/booki-présentation.png",
     "logo": "",
-    "tags": ["HTML", "CSS"]
+    "tags": ["HTML", "CSS"],
+    "url" : ""
 },
 {
     "id" : 3,
@@ -21,7 +23,8 @@
     "description" : "Un site pour...",
     "image":".../assets/logo-kasa.png",
     "logo": "",
-    "tags": ["HTML", "CSS", "JavaScript"]
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "url" : ""
 }
 
 ]

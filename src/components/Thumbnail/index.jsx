@@ -2,7 +2,7 @@ function Thumbnail({title, image, openModal}) {
 
 
         return (
-            <div>
+            <div className="thumbnail-container">
                 <button id="btn-thumbnail" onClick={openModal}>
                     <img src={image} alt={`Projet ${title}`}/>
                     <div className="thumbnail-title">

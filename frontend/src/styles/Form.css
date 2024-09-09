@@ -1,0 +1,109 @@
+#contact-form {
+    margin:auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form label {
+    width: 100%;
+    font-size: 30px;
+    text-align: left;
+    color: #2E9191;
+}
+
+#contact-form input:not(#form-message, #form-submit) {
+    margin: 20px 0;
+    width: 99%;
+    height: 50px;
+    padding: 10px;
+    font-family: Lusitana;
+    background-color:#E3F9F9;
+    border: none;
+    border-width: 1.5px;
+    border-color : #2E9191;
+    border-radius: 15px;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+#form-message  {
+    height: 300px;
+    width: 99%;
+    margin: 20px 0;
+    padding: 10px;
+    letter-spacing: 1px;
+    background-color:#E3F9F9;
+    font-family: Lusitana;
+    border: none;
+    border-width: 1.5px;
+    border-color : #2E9191;
+    border-radius: 15px;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+#form-submit {
+    margin-top: 40px;
+    height: 60px;
+    width: 200px;
+    border-radius: 25px;
+    background-color: #095252;
+    color: #E3F9F9;
+    font-family: 'Lusitana';
+    font-size: 26px;
+    border-style: solid;
+    border-color: #095252;
+    
+}
+
+
+@media screen and (max-width: 1239px) {
+
+    
+    #contact-form label {
+        width: 89%;
+        font-size: 20px;
+    }
+    
+    #contact-form input:not(#form-message, #form-submit) {
+        width: 90%;
+        padding: 10px;
+
+    }
+    
+    #form-message  {
+        width: 90%;
+        height: 250px;
+        padding: 10px;
+    }
+    
+    #form-submit {
+        margin-top: 20px;
+        height: 50px;
+        width: 150px;
+        font-family: 'Lusitana';
+        font-size: 20px;
+        
+    }
+    
+}
+
+@media screen and (max-width:699px) {
+    #contact-form label {
+        width: 98%;
+        font-size: 20px;
+    }
+    
+    #contact-form input:not(#form-message, #form-submit) {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #form-message  {
+        width: 100%;
+        height: 250px;
+        padding: 10px;
+    }
+}

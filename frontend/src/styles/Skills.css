@@ -1,0 +1,110 @@
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+  .canvasjs-chart-container {
+    width: 800px; 
+    height: 400px; 
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .canvasjs-chart-credit {
+    visibility: hidden;
+  }
+
+  .toggle-container {
+    width: 200px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  #skills img {
+    height: 34px;
+
+  }
+
+  @media screen and (max-width:1239px) {
+    #skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+    
+    .canvasjs-chart-container {
+      width: 600px; 
+      height: 300px; 
+      margin: 0 auto; 
+      position: absolute;
+    }
+    
+    .canvasjs-chart-canvas {
+      width: 500px;
+    }
+  
+    .canvasjs-chart-credit {
+      visibility: hidden;
+    }
+  
+    .toggle-container {
+      width: 200px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  
+    }
+  
+    #skills img {
+      height: 34px;
+  
+    }
+  }
+
+  @media screen and (max-width:699px) {
+    #skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+    
+    .canvasjs-chart-container {
+      width: 330px;
+      margin: 0 auto; 
+      position: absolute;
+      box-sizing: border-box;
+    }
+    
+    .canvasjs-chart-canvas {
+      width: 330px;
+    }
+  
+    .canvasjs-chart-credit {
+      visibility: hidden;
+    }
+  
+    .toggle-container {
+      width: 200px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  
+    }
+  
+    #skills img {
+      height: 34px;
+  
+    }
+  }

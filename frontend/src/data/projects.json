@@ -1,28 +1,37 @@
 [{
     "id" : 1,
     "title": "Kasa",
-    "description" : "Un site pour...",
-    "image":"/assets/images/logo-kasa.png",
+    "subtitle": "Application Web de location immobilière",
+    "description" : " Créer une interface utilisateur moderne en React basée sur des maquettes fournies sur Figma, avec une navigation entre les pages via React Router. Le site devait être responsive et offrir une expérience fluide grâce à des animations CSS et une gestion des styles avec Sass. Le projet comportait des fonctionnalités avancées comme une galerie d’images avec navigation en boucle et un système de collapse pour afficher ou masquer du contenu.",
+    "problematic": ["Intégrer des maquettes Figma en React", "Gérer les états des composants : galerie, collapse", "Rendre l'application responsive"],
+    "year": "2023",
+    "image":"/assets/images/projects/kasa/kasa-capture.png",
     "logo":"/assets/images/logo-kasa.png",
     "tags": [ "REACT", "HTML", "CSS", "SASS"],
-    "url" : ""
+    "url" : "https://github.com/Rean18/kasa"
+    
 },
 {
     "id" : 2,
     "title": "Booki",
-    "description" : "Un site pour...",
+    "subtitle": "Page d'accueil d'une agence de voyage",
+    "description" : "Ce projet consistait à développer la page d’accueil d’une agence de voyage nommée Booki en utilisant uniquement HTML et CSS. L’objectif était d’intégrer une interface web responsive à partir des maquettes fournies pour les formats desktop, tablette et mobile via Figma.",
+    "problematic": ["Respecter précisément les maquettes sur tous les formats", "Organiser et structurer le le CSS pour éviter les répétitions"],
     "year": "2023",
-    "image":"/assets/images/projects/booki/booki-présentation.png",
-    "logo": "",
+    "image":"/assets/images/projects/booki/booki-capture.png",
+    "logo": "/assets/images/projects/booki/booki-presentation.png",
     "tags": ["HTML", "CSS"],
     "url" : ""
 },
 {
     "id" : 3,
-    "title": "Site Web de Sophie Bluel",
-    "description" : "Un site pour...",
-    "image":".../assets/logo-kasa.png",
-    "logo": "",
+    "title": "Portfolio de Sophie Bluel",
+    "subtitle": "Site vitrine",
+    "description" : "Ce projet avait pour objectif de développer une page web dynamique pour une architecte d’intérieur, en utilisant JavaScript pour interagir avec une API. En tant que développeur front-end au sein de l’agence ArchiWebos, ta mission principale était de transformer une version statique de la page web en une interface interactive et fonctionnelle. Le projet comprenait également la création d’une page de connexion pour l’administrateur et d’une modale permettant l’upload de nouveaux médias.",
+    "problematic": ["Gérer les évènements utilisateurs", "Manipuler le DOM", "Intégrer des données via une API", "Création d'une page de connexion pour l'administrateur"],
+    "year": "2023",
+    "image":"/assets/images/projects/portfolio-sbluel/sbluel-capture.png",
+    "logo": "/assets/images/projects/portfolio-sbluel/sbluel-presentation.png",
     "tags": ["HTML", "CSS", "JavaScript"],
     "url" : ""
 }

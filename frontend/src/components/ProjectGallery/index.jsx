@@ -3,6 +3,7 @@ import Modal from "react-modal";
 import Thumbnail from "../Thumbnail";
 import ProjectPage from "../ProjectPage";
 import '../../styles/Project.css'
+import '../../styles/Thumbnail.css'
 import projectData from '../../data/projects.json'
 
 Modal.setAppElement("#root"); // Nécessaire pour l'accessibilité avec react-modal
@@ -55,7 +56,7 @@ useEffect(() => {
     const customStylesDesktop = {
         content : {
             width: '70%',
-            height: '90%',
+            height: '100%',
             margin: 'auto',
 
         }
@@ -87,7 +88,8 @@ useEffect(() => {
                 </button>
                 <Thumbnail 
                     title= {currentProject.title}
-                    image= {currentProject.image} 
+                    image= {currentProject.logo}
+                    subtitle={currentProject.subtitle} 
                     openModal={() => openModal(currentProject)} />
                 <button className="change-project" onClick={handleNextProject}>
                 <img 
@@ -113,6 +115,8 @@ useEffect(() => {
                         year = {currentProject.year}
                         description={currentProject.description}
                         tags = {currentProject.tags}
+                        problematic={currentProject.problematic}
+                        url = {currentProject.url}
                         closeModal={closeModal} 
                     />
                 )}

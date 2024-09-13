@@ -1,83 +1,19 @@
-#project {
-    padding: 40px 40px 60px 40px;
-  
-}
 
-#project .container {
-    margin: auto;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-#project .change-project {
-    width: 150px;
-    height: 300px;
-    background-color: #2E9191;
-    border: none;
-}
-
-.change-project:hover {
-    cursor: pointer;
-}
-
-.thumbnail-container {
-    width: 600px;
-    height: 400px;
-}
-
-#btn-thumbnail {
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: white;
-    border-color: #095252;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 1px 4px 4px;
-    border-style: solid;
-
-
-}
-
-#btn-thumbnail img {
-    max-width: 600px;
-}
-
-.thumbnail-title {
-    margin-top: 30px;
-    width: 100%;
-    background-color: #095252;
-    border-radius: 0 0 17px 17px;
-    border : solid 2px;
-    border-color:#095252;
-}
-
-#btn-thumbnail h3 {
-    padding: 20px;
-    font-size: 20px;
-    text-align: left;
-    color: white;
-}
 
 #project-container {
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 50px;
 }
 
-#project-container button {
+#cross-modal {
     width: 50px;
     height: 50px;
     position: absolute;
     right: 40px;
-    top: 40px;
+    top: 80px;
     background-color: white;
     background-image: url('../../public/assets/icons/close.png');
     background-size: cover;
@@ -102,15 +38,30 @@
 #project-container h4 {
     margin-top: 20px;
     font-size: 18px;
+    text-decoration: underline;
+}
+
+#project-container .item, p {
+    color: #095252;
+    line-height: 2;
+    padding-left: 5px;
+}
+#project-container .item {
+   list-style:circle;
+   margin-left: 20px;
 }
 
 #project-container .image-container {
     display: flex;
     justify-content: center;
 }
-#project-container img {
-    width: 90%;
-    margin-top: 50px;
+#project-image {
+    width: 100%;
+    padding: 20px;
+    max-height: 700px;
+    margin-top: 80px;
+    border: solid #2E9191 2px;
+    border-radius: 20px;
 }
 
 .project-description {
@@ -119,22 +70,40 @@
     background-color:#E3F9F9;
 }
 
+.github-container {
+    position: absolute;
+    left: 0;
+    right: 0 ;
+    width: calc(100% - 10%);
+    height: 40px;
+}
+
+#github-icon {
+    position: absolute;
+    right: 0px;
+    width: 40px;
+    cursor: pointer;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
 @media screen and (max-width:1239px) {
 
   
-    #btn-thumbnail img {
-        width: 400px;
-    }
-
-    #project .change-project  {
-        width: 100px;
-        height: 200px;
-    }
-
-    .thumbnail-container {
-        width: 500px;
-        height: 300px;
-    }
+   
 
     #project-container h2 {
         font-size: 50px;
@@ -144,37 +113,41 @@
         font-size: 20px;
     }
     #project-container h4 {
-            font-size: 14px;
+        font-size: 14px;
+    }
+    .github-container {
+        height: 30px;
+    }
+    
+    #github-icon {
+        width: 30px;
     }
 }
 
 @media screen and (max-width:699px) {
 
-  #project .container {
-        aspect-ratio: 16 /9;
-
-    }
-
-    #project-container button {
+  
+    #cross-modal {
         width: 40px;
         height: 40px;
         position: absolute;
         right: 20px;
     }
-
-    .thumbnail-container {
-        max-width: 100%;
-        box-sizing: border-box;
+    #cross-modal {
+        top:50px;
     }
 
-    #btn-thumbnail img {
-        max-width: 100%;
+    #close-modal {
+        font-size:16px;
     }
-
-    #project .change-project img {
-        max-width: 100%;
+    #project-container {
+        padding-top: 30px;
     }
+    .github-container {
+        width:calc(100% - 15%);
+    } 
 
-
-    
+    #project-container .item, p {
+        font-size: 14px;
+    }
 }

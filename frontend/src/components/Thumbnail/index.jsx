@@ -1,12 +1,23 @@
-function Thumbnail({title, image, openModal}) {
+function Thumbnail({title, image, openModal, subtitle}) {
 
 
         return (
             <div className="thumbnail-container">
                 <button id="btn-thumbnail" onClick={openModal}>
-                    <img src={image} alt={`Projet ${title}`}/>
+                    <div className="thumbnail-image-container">
+                        <img src={image} alt={`Projet ${title}`}/>
+                    </div>
+                    
                     <div className="thumbnail-title">
-                        <h3>{title}</h3>
+                        <div>
+                            <h3>{title}</h3>
+                        </div>
+                        <div>
+                            <h4>-</h4>
+                        </div>
+                        <div>
+                            <h4>{subtitle}</h4>
+                        </div> 
                     </div>
                 </button>
                 

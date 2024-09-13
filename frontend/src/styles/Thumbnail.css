@@ -1,0 +1,140 @@
+#project {
+    padding: 40px 40px 60px 40px;
+  
+}
+
+#project .container {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#project .change-project {
+    width: 150px;
+    height: 300px;
+    background-color: #2E9191;
+    border: none;
+}
+
+.change-project:hover {
+    cursor: pointer;
+}
+
+.thumbnail-container {
+    width: 600px;
+    height: 400px;
+}
+
+#btn-thumbnail {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-color: #095252;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 4px 4px;
+    border-style: solid;
+
+
+}
+
+#btn-thumbnail img {
+    max-width: 500px;
+        
+}
+
+.thumbnail-image-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail-title {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 70px;
+    column-gap: 5px;
+    background-color: #095252;
+    border-radius: 0 0 17px 17px;
+    border : solid 2px;
+    border-color:#095252;
+}
+
+.thumbnail-title div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#btn-thumbnail h3 {
+    padding-left: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+#btn-thumbnail h4 {
+    font-size: 16px;
+    color: white;
+    font-style: italic;
+}
+
+#close-modal {
+    width: 100px;
+    height: 50px;
+    background-color: #095252;
+    color: white;
+    font-family: Lusitana;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:1239px) {
+    #btn-thumbnail img {
+        width: 400px;
+    }
+
+    #project .change-project  {
+        width: 100px;
+        height: 200px;
+    }
+
+    .thumbnail-container {
+        width: 500px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width:699px) {
+    #project .container {
+        aspect-ratio: 16 /9;
+    }
+    .thumbnail-container {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #btn-thumbnail img {
+        margin-top: 30px;
+        max-width: 70%;
+    }
+    #project .change-project img {
+        max-width: 100%;
+    }
+    #project h3 {
+        font-size: 16px;
+    }
+    #project h4 {
+        font-size: 14px;
+        text-align: left;
+    }
+}

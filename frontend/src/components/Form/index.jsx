@@ -1,9 +1,15 @@
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import '../../styles/Form.css';
 
 function Form() {
 
+ const [sendingSucces, setSendingSucces] = useState(null)
  const { register, handleSubmit, formState: { errors } } = useForm();
+ const [isSubmited, setIsSubmited] = useState(false)
+ const messageSent = "Votre message a bien été envoyé !";
+ const messageFailed = "Une erreur s'est produite...";
+
 
  const sendEmail = async (data) => {
     try {
@@ -17,19 +23,33 @@ function Form() {
         console.log(data);
 
         if (response.ok) {
-            alert('Message envoyé avec succès !');
+            setSendingSucces(true)
         } else {
-            alert('Erreur lors de l\'envoi du message');
+            setSendingSucces(false);
         }
     } catch (error) {
         console.error('Erreur: ', error);
-        alert('Erreur lors de l\'envoi du message');
     }
+    setIsSubmited(true);
+ }
+
+ const closeMessage = () => {
+    setIsSubmited(false);
+    setSendingSucces(null);
  }
 
  return (
     <section className="white-section" id="contact">
         <h2>Contact</h2>
+        {isSubmited &&
+            <div className={`message-issue-container fade-in`}>
+                <img src={sendingSucces ? "/assets/icons/joyeux.png": "/assets/icons/triste.png"} alt="icone" id="smiley" />
+                <p className="message-issue">{sendingSucces ? messageSent : messageFailed}</p>
+                <button onClick={closeMessage}>Ok</button>
+            </div>
+        
+        }
+            
         <form id='contact-form' onSubmit={handleSubmit(sendEmail)}>
             <label htmlFor="lastName">Nom</label>
             <input 
@@ -41,7 +61,7 @@ function Form() {
                         message: "Le nom ne doit pas dépasser 20 caractères"
                     },
                     pattern: { 
-                        value: /^[a-zA-Z\s-]+$/, 
+                        value: /^[\p{L}\s-]+$/u, 
                         message: 'Entrez un nom valide' 
                     } 
                 })} 
@@ -58,7 +78,7 @@ function Form() {
                         message: "Le prénom ne doit pas dépasser 20 caractères"
                     },
                     pattern: { 
-                        value: /^[a-zA-Z\s-]+$/, 
+                        value: /^[\p{L}\s-]+$/u, 
                         message: 'Entrez un prénom valide' 
                     } 
                 })} 
@@ -75,7 +95,7 @@ function Form() {
                         message: "L'objet ne doit pas dépasser 30 caractères"
                     },
                     pattern: { 
-                        value: /^[a-zA-Z\s-.]+$/, 
+                        value: /^[\p{L}\s-]+$/u, 
                         message: "Entrez un objet valide" 
                     } 
                 })} 
@@ -93,7 +113,7 @@ function Form() {
                         message: "Le message ne doit pas dépasser 500 caractères"
                     },
                     pattern: { 
-                        value: /^[a-zA-Z0-9\s-.?!_]+$/, 
+                       value: /^[a-zA-ZàâäéèêëïîôöùûüçÀÂÄÉÈÊËÏÎÔÖÙÛÜÇ0-9\s-.?!_]+$/,
                         message: "Entrez un message valide" 
                     } 
                 })} 

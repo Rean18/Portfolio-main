@@ -1,3 +1,6 @@
+#contact {
+    position: relative;
+}
 #contact-form {
     margin:auto;
     max-width: 600px;
@@ -58,6 +61,57 @@
     
 }
 
+.message-issue-container {
+    position: absolute;
+    top: 30%;
+    right: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    background-color: #2E9191;
+    border-radius: 30px;
+    border: solid 3px #095252;
+    width: 30%;
+    height: 20%;
+    z-index: 1000;
+    box-shadow:  0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0 ;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#smiley {
+    width: 30px;
+}
+
+.message-issue {
+    color: #E3F9F9;
+    font-size: 20px;
+    
+}
+.message-issue-container button {
+    cursor: pointer;
+    background-color: #E3F9F9;
+    color:#095252;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    border : solid 1px #095252;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
 
 @media screen and (max-width: 1239px) {
 
@@ -87,6 +141,13 @@
         font-size: 20px;
         
     }
+
+    .message-issue-container {
+        top: 30%;
+        right: 30%;
+        width: 40%;
+        height: 20%;
+    }
     
 }
 
@@ -105,5 +166,19 @@
         width: 100%;
         height: 250px;
         padding: 10px;
+    }
+
+    .message-issue-container {
+        top: 30%;
+        right: 25%;
+        width: 50%;
+        height: 25%;
+    }
+    .message-issue {
+        font-size: 16px; 
+    }
+    .message-issue-container button {
+        width: 80px;
+        height: 40px;
     }
 }

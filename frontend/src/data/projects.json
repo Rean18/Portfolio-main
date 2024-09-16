@@ -6,7 +6,7 @@
     "problematic": ["Intégrer des maquettes Figma en React", "Gérer les états des composants : galerie, collapse", "Rendre l'application responsive"],
     "year": "2023",
     "image":"/assets/images/projects/kasa/kasa-capture.png",
-    "logo":"/assets/images/logo-kasa.png",
+    "logo":"/assets/images/projects/kasa/logo-kasa.png",
     "tags": [ "REACT", "HTML", "CSS", "SASS"],
     "url" : "https://github.com/Rean18/kasa"
     

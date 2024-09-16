@@ -37,6 +37,13 @@
     border-left: solid 2px white;
 }
 
+#about a {
+    text-decoration: underline;
+}
+#about a:hover {
+    color: #095252;
+}
+
 @media screen and (max-width:1239px) {
 
 #about p {

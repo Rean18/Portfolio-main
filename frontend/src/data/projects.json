@@ -3,7 +3,14 @@
     "title": "Kasa",
     "subtitle": "Application Web de location immobilière",
     "description" : " Créer une interface utilisateur moderne en React basée sur des maquettes fournies sur Figma, avec une navigation entre les pages via React Router. Le site devait être responsive et offrir une expérience fluide grâce à des animations CSS et une gestion des styles avec Sass. Le projet comportait des fonctionnalités avancées comme une galerie d’images avec navigation en boucle et un système de collapse pour afficher ou masquer du contenu.",
-    "problematic": ["Intégrer des maquettes Figma en React", "Gérer les états des composants : galerie, collapse", "Rendre l'application responsive"],
+    "problematic": ["Intégrer des maquettes Figma en React",
+                    "Gérer les états des composants : galerie, collapse",
+                    "Rendre l'application responsive"
+                    ],
+    "solution": ["J'ai utilisé les maquettes Figma comme base pour structurer les composants React de manière modulaire. En décomposant les sections de l’interface en composants réutilisables, j’ai pu garder le code clair et maintenable tout en respectant fidèlement les designs fournis.",
+                "Pour la galerie d’images, j’ai géré l’état avec useState et utilisé un système de bouclage pour permettre à l’utilisateur de naviguer sans fin dans les images. Le système de collapse a été mis en œuvre en suivant une approche similaire, en contrôlant la visibilité du contenu via des états React et en appliquant des animations CSS pour rendre les transitions fluides et naturelles.",
+                "Afin d’assurer que le site soit parfaitement responsive, j’ai utilisé une combinaison de media queries et de Flexbox en CSS. L’utilisation de Sass a facilité l’organisation des styles, notamment pour la gestion des breakpoints et des animations CSS, permettant de maintenir un code CSS clair et scalable."
+                ],
     "year": "2023",
     "image":"/assets/images/projects/kasa/kasa-capture.png",
     "logo":"/assets/images/projects/kasa/logo-kasa.png",
@@ -11,24 +18,21 @@
     "url" : "https://github.com/Rean18/kasa"
     
 },
+
 {
     "id" : 2,
-    "title": "Booki",
-    "subtitle": "Page d'accueil d'une agence de voyage",
-    "description" : "Ce projet consistait à développer la page d’accueil d’une agence de voyage nommée Booki en utilisant uniquement HTML et CSS. L’objectif était d’intégrer une interface web responsive à partir des maquettes fournies pour les formats desktop, tablette et mobile via Figma.",
-    "problematic": ["Respecter précisément les maquettes sur tous les formats", "Organiser et structurer le le CSS pour éviter les répétitions"],
-    "year": "2023",
-    "image":"/assets/images/projects/booki/booki-capture.png",
-    "logo": "/assets/images/projects/booki/booki-presentation.png",
-    "tags": ["HTML", "CSS"],
-    "url" : ""
-},
-{
-    "id" : 3,
     "title": "Portfolio de Sophie Bluel",
     "subtitle": "Site vitrine",
     "description" : "Ce projet avait pour objectif de développer une page web dynamique pour une architecte d’intérieur, en utilisant JavaScript pour interagir avec une API. En tant que développeur front-end au sein de l’agence ArchiWebos, ta mission principale était de transformer une version statique de la page web en une interface interactive et fonctionnelle. Le projet comprenait également la création d’une page de connexion pour l’administrateur et d’une modale permettant l’upload de nouveaux médias.",
-    "problematic": ["Gérer les évènements utilisateurs", "Manipuler le DOM", "Intégrer des données via une API", "Création d'une page de connexion pour l'administrateur"],
+    "problematic": ["Gérer les évènements utilisateurs", 
+                    "Manipuler le DOM", "Intégrer des données via une API", 
+                    "Création d'une page de connexion pour l'administrateur"
+                    ],
+    "solution": ["J’ai utilisé les gestionnaires d’événements en JavaScript pour répondre de manière fluide aux interactions utilisateurs, comme le clic sur des boutons ou la soumission de formulaires.",
+                "Pour dynamiser l’interface, j’ai utilisé des méthodes comme querySelector, appendChild et removeChild pour interagir directement avec le DOM.",
+                "Pour intégrer les données provenant de l’API, j’ai utilisé fetch pour récupérer les informations, avec la gestion des promesses afin de s’assurer que les données soient correctement chargées avant d’être affichées.",
+                "J’ai développé un système de connexion sécurisé en utilisant un formulaire HTML associé à une vérification côté client. L’authentification a été gérée avec l’envoi des informations de connexion à l’API pour valider les accès."
+            ],
     "year": "2023",
     "image":"/assets/images/projects/portfolio-sbluel/sbluel-capture.png",
     "logo": "/assets/images/projects/portfolio-sbluel/sbluel-presentation.png",

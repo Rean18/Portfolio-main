@@ -1,7 +1,7 @@
 import Tags from "../Tags"
 
 
-function ProjectPage({title, image, year, description, problematic, closeModal, tags, url}) {
+function ProjectPage({title, image, year, description, problematic, solutions, closeModal, tags, url}) {
     return (
             <div id="project-container">
                     <button type="button" id="cross-modal" onClick={closeModal}></button>
@@ -25,6 +25,10 @@ function ProjectPage({title, image, year, description, problematic, closeModal, 
                     <h4>Problématiques :</h4> 
                         <ul >{problematic.map((problem, index)=> (
                             <li className="item" key={index}>{problem}</li>
+                        ))}</ul>
+                    <h4>Solutions apportées</h4>
+                    <ul >{solutions.map((solution, index)=> (
+                            <li className="item" key={index}>{solution}</li>
                         ))}</ul>
                 </div>
                 <button type="button" id="close-modal" onClick={closeModal}>Fermer</button>

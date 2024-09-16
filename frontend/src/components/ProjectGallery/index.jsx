@@ -116,6 +116,7 @@ useEffect(() => {
                         description={currentProject.description}
                         tags = {currentProject.tags}
                         problematic={currentProject.problematic}
+                        solutions={currentProject.solution}
                         url = {currentProject.url}
                         closeModal={closeModal} 
                     />

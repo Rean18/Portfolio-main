@@ -15,14 +15,14 @@
     justify-content: center;
 }
 
-.presentation-title h1 {
-    font: 48px bold;
+ h1 {
+    font-size: 48px;
     color: #2E9191;
     text-shadow: rgba(0, 0, 0, 0.4) 1px 4px 4px;
 }
 
 .presentation-title h2 {
-    font: 32px bold;
+    font-size: 32px;
     color:#2E9191;
     margin-left: 22%;
     text-shadow: rgba(0, 0, 0, 0.4) 1px 3px 3px;
@@ -50,7 +50,7 @@
     scroll-margin-top: 80px; 
 }
 .blue-section h2 {
-    font : 36px bold;
+    font-size : 36px;
     color:#fff;
     margin-bottom: 50px;
     
@@ -69,7 +69,7 @@
 
 }
 .white-section h2 {
-    font : 36px bold;
+    font-size : 36px;
     color: #2E9191;
     margin-bottom: 50px;
     

@@ -5,9 +5,9 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:3001',  // Remplace par l'URL de ton frontend
-    methods: ['GET', 'POST'],         // Autorise les méthodes HTTP nécessaires
-    allowedHeaders: ['Content-Type'], // Autorise les en-têtes nécessaires
+    origin: 'https://remi-dev.fr', 
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type'],
 }));
 app.use(express.json());
 

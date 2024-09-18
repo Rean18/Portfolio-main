@@ -73,7 +73,7 @@ function Chart({ data }) {
               
       return (
         <div className='chart-wrapper'>
-          <CanvasJSChart options = {isMobile ? mobileOptions : desktopOptions} />
+          <CanvasJSChart key={isMobile ? "mobile" : "desktop"} options = {isMobile ? mobileOptions : desktopOptions} />
         </div>
       );
 }

@@ -38,8 +38,9 @@
     justify-content: space-between;
     background-color: white;
     border-color: #095252;
+    border-width: 3px 3px 0 3px;
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 1px 4px 4px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 8px 8px;
     border-style: solid;
 
 
@@ -60,13 +61,14 @@
 .thumbnail-title {
     display: flex;
     justify-content: flex-start;
-    width: 100%;
+    width: 101%;
     min-height: 70px;
     column-gap: 5px;
     background-color: #095252;
     border-radius: 0 0 17px 17px;
-    border : solid 2px;
     border-color:#095252;
+    box-sizing: border-box;
+    border-width: 0 0 3px 0;
 }
 
 .thumbnail-title div {
@@ -136,5 +138,8 @@
     #project h4 {
         font-size: 14px;
         text-align: left;
+    }
+    #btn-thumbnail h4 {
+        display: none;
     }
 }

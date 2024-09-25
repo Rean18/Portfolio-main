@@ -3,7 +3,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     min-height : 200px;
-    background-color: #2E9191;
+    background-color: #186262;
     text-align: center;
     color: white;
 }
@@ -14,5 +14,5 @@ footer img {
 }
 
 footer p {
-    color: #E3F9F9;
+    color: white;
 }

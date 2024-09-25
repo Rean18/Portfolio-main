@@ -17,13 +17,13 @@
 
  h1 {
     font-size: 48px;
-    color: #2E9191;
+    color: #186262;
     text-shadow: rgba(0, 0, 0, 0.4) 1px 4px 4px;
 }
 
 .presentation-title h2 {
     font-size: 32px;
-    color:#2E9191;
+    color:#186262;
     margin-left: 22%;
     text-shadow: rgba(0, 0, 0, 0.4) 1px 3px 3px;
 
@@ -37,7 +37,7 @@
 .presentation-img img {
     width: 220px;
     border-radius: 100%;
-    border: #2E9191 3px solid;
+    border: #186262 3px solid;
     box-shadow: rgba(0, 0, 0, 0.4) 1px 6px 6px;
 
 }
@@ -45,7 +45,7 @@
 .blue-section {
     min-height: 500px;
     padding: 50px 100px;
-    background-color: #2E9191;
+    background-color: #186262;
     text-align: center;
     scroll-margin-top: 80px; 
 }
@@ -70,7 +70,7 @@
 }
 .white-section h2 {
     font-size : 36px;
-    color: #2E9191;
+    color: #186262;
     margin-bottom: 50px;
     
 }
@@ -101,7 +101,7 @@
     .blue-section {
         max-height: 300px;
         padding: 40px 40px;
-        background-color: #2E9191;
+        background-color: #186262;
         text-align: center;
         scroll-margin-top: 80px; 
     }
@@ -124,7 +124,7 @@
     }
     .white-section h2 {
         font : 26px bold;
-        color: #2E9191;
+        color: #186262;
         margin-bottom: 50px;
         
     }

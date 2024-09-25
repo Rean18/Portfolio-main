@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2E9191;
+    background-color: #186262;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Pour ajouter un peu de style */
 
 }
@@ -47,15 +47,16 @@ nav .nav-links li {
     list-style-type: none;
     padding: 20px;}
 
-a {
+nav a {
     text-decoration: none;
     color: #FFFFFF;
-    font: 20px bold;
+    font-size: 22px;
+    font-weight: 500;
 
 }
 
 a:hover {
-    color: #095252;
+    text-decoration: underline;
 }
 
 .navbar {
@@ -71,6 +72,7 @@ a:hover {
     right: 10px;
     width: 50px;
     background-color: none;
+    cursor: pointer;
 }
 
 
@@ -127,7 +129,7 @@ div button {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #2E9191;
+        background-color: #186262;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Pour ajouter un peu de style */
     }
 }

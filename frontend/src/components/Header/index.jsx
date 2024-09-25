@@ -6,14 +6,14 @@ function Header() {
   const [isTablet, setIsTablet] = useState(false);
   const [openBurgerMenu, setOpenBurgerMenu] = useState(false);
 
-  const burgerMenuRef = useRef(null);
+  const burgerMenuRef = useRef(null); // la ref ne pointe vers aucun élément du DOM
 
   // Création d'une fonction qui configure le useState en fonction d'une taillé d'écran
   const handleResize = () => {
-    setIsTablet(window.innerWidth < 1240);
+    setIsTablet(window.innerWidth < 1240); // Si la largeur de l'écran est inféreieur à 1240px, devient true
   };
 
-  useEffect(() => {
+  useEffect(() => { // Rend l'élément lorsque <1240
     handleResize();
     window.addEventListener('resize', handleResize); //ajout d'un évènement 
     return () => {
@@ -21,18 +21,18 @@ function Header() {
     };
   }, []);
 
-  const handleBurgerMenu = () => {
+  const handleBurgerMenu = () => {  // Inverse l'ouverture ou la fermeture de menu au click
     setOpenBurgerMenu(!openBurgerMenu);
   };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-        if(burgerMenuRef.current && !burgerMenuRef.current.contains(event.target)) {
+        if(burgerMenuRef.current && !burgerMenuRef.current.contains(event.target)) {  // Si la ref burgerMenu pointe vers la div et que le click est en dehors de la div alors on ferme le menu
             setOpenBurgerMenu(false);
         };
     }
 
-        if(openBurgerMenu) {
+        if(openBurgerMenu) {  // si le menu est ouvert, on écoute le click en dehors et on ferme
             document.addEventListener('mousedown', handleClickOutside);
         } else {
             document.removeEventListener('mousedown', handleClickOutside);
@@ -41,7 +41,7 @@ function Header() {
             document.removeEventListener('mousedown', handleClickOutside);
         };
     
-  }, [openBurgerMenu]);
+  }, [openBurgerMenu]); // re-rendu chaque fois que openBurgerMenu change d'état
 
   return (
     <header>
@@ -52,7 +52,7 @@ function Header() {
           </NavHashLink>
         </div>
         <nav className='navbar'>
-          {!isTablet ? (
+          {!isTablet ? (  
             <ul className='nav-links'>
               <li><NavHashLink smooth to='/#about'>À propos</NavHashLink></li>
               <li><NavHashLink smooth to='/#skills'>Compétences</NavHashLink></li>

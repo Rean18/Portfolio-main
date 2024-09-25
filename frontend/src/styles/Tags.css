@@ -18,8 +18,8 @@
 
 .tags-list li {
     padding: 5px 20px;
-    color: #2E9191;
-    border: #2E9191 solid 3px;
+    color: #186262;
+    border: #186262 solid 3px;
     border-radius: 30px;
     list-style: none;
     box-shadow: rgba(0, 0, 0, 0.4) 1px 4px 4px;;
@@ -35,7 +35,7 @@
     }
     .tags-list li {
         padding: 5px 15px;
-        border: #2E9191 solid 2px;
+        border: 186262 solid 2px;
         border-radius: 25px;
         font-size: 15px;
     }
@@ -49,7 +49,7 @@
     }
     .tags-list li {
         padding: 5px 15px;
-        border: #2E9191 solid 2px;
+        border: 186262 solid 2px;
         border-radius: 25px;
         font-size: 12px;
     }

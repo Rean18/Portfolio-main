@@ -17,7 +17,7 @@ input,textarea {
     width: 100%;
     font-size: 30px;
     text-align: left;
-    color: #2E9191;
+    color: #186262;
 }
 
 #contact-form input:not(#form-message, #form-submit) {
@@ -29,7 +29,7 @@ input,textarea {
     background-color:#E3F9F9;
     border: none;
     border-width: 1.5px;
-    border-color : #2E9191;
+    border-color : #186262;
     border-radius: 15px;
     border-style: solid;
     box-sizing: border-box;
@@ -47,7 +47,7 @@ input,textarea {
     font-family: Lusitana;
     border: none;
     border-width: 1.5px;
-    border-color : #2E9191;
+    border-color : #186262;
     border-radius: 15px;
     border-style: solid;
     box-sizing: border-box;
@@ -59,11 +59,12 @@ input,textarea {
     width: 200px;
     border-radius: 25px;
     background-color: #095252;
-    color: #E3F9F9;
+    color: #ffff;
     font-family: 'Lusitana';
     font-size: 26px;
     border-style: solid;
     border-color: #095252;
+    cursor: pointer;
     
 }
 
@@ -76,7 +77,7 @@ input,textarea {
     justify-content: center;
     align-items: center;
     row-gap: 10px;
-    background-color: #2E9191;
+    background-color: #186262;
     border-radius: 30px;
     border: solid 3px #095252;
     width: 30%;

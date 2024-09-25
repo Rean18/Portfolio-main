@@ -23,9 +23,9 @@ function Skills() {
 
       const dataDevSkills = [
         { label: "HTML & CSS",  y: 70, color:'#095252' },
-        { label: "GitHub", y: 60, color:'#095252'  },
-        { label: "React & JS", y: 60, color:'#095252'  },
-        { label: "Figma",  y: 50, color:'#095252'  },
+        { label: "GitHub", y: 50, color:'#095252'  },
+        { label: "React", y: 60, color:'#095252'  },
+        { label: "JavaScript",  y: 60, color:'#095252'  },
         { label: "express",  y: 30, color:'#095252'  }
       ];
 

@@ -1,29 +1,45 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
+import Turnstile from "react-turnstile";
 import '../../styles/Form.css';
 
 function Form() {
 
  const [sendingSucces, setSendingSucces] = useState(null)
- const { register, handleSubmit, formState: { errors } } = useForm();
- const [isSubmited, setIsSubmited] = useState(false)
- const messageSent = "Votre message a bien été envoyé !";
+ const { register, handleSubmit, formState: { errors }, reset } = useForm();
+ const [captchaToken, setCaptchaToken] = useState(null);
+ const [isSubmited, setIsSubmited] = useState(false);
  const messageFailed = "Une erreur s'est produite...";
+ const messageSent = "Votre message a bien été envoyé !";
+
+
+ const onCaptchaSuccess = (token) => {
+    setCaptchaToken(token);
+  }; 
 
 
  const sendEmail = async (data) => {
+    if (!captchaToken) {
+        alert("CAPTCHA non validé.");
+        return;
+      }
+    const payload = {
+        ...data,
+        'cf-turnstile-response': captchaToken,  // Ajoute ici le token récupéré
+      };
+   
     try {
         const response = await fetch(process.env.REACT_APP_API_URL, {
             method : 'POST',
             headers : {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(payload)
         });
-        console.log(data);
 
         if (response.ok) {
-            setSendingSucces(true)
+            setSendingSucces(true);
+            reset();
         } else {
             setSendingSucces(false);
         }
@@ -36,7 +52,7 @@ function Form() {
  const closeMessage = () => {
     setIsSubmited(false);
     setSendingSucces(null);
- }
+ };
 
  return (
     <section className="white-section" id="contact">
@@ -119,11 +135,16 @@ function Form() {
                 })} 
             />
             {errors.message && <p className="error">{errors.message.message}</p>}
+            <Turnstile
+                    sitekey= { process.env.REACT_APP_TURNSTILE_SITE_KEY }
+                    onVerify={onCaptchaSuccess}
+            />
 
+           
             <input type="submit" id="form-submit" />
         </form>
     </section>
  );
 }
 
-export default Form;
+export default Form
